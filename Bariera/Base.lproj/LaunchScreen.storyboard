@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,11 +18,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="baricada.png" translatesAutoresizingMaskIntoConstraints="NO" id="eXE-oe-YxF">
-                                <rect key="frame" x="40" y="136" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="baricada.png" translatesAutoresizingMaskIntoConstraints="NO" id="eXE-oe-YxF">
+                                <rect key="frame" x="40" y="220" width="240" height="128"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Se incarca..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="evg-Nd-zcx">
+                                <rect key="frame" x="89" y="356" width="142" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="HTH-so-JQb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eXE-oe-YxF" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="IfR-1d-rTv"/>
+                            <constraint firstItem="evg-Nd-zcx" firstAttribute="top" secondItem="eXE-oe-YxF" secondAttribute="bottom" constant="8" symbolic="YES" id="InA-pl-387"/>
+                            <constraint firstItem="eXE-oe-YxF" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="24" id="M9D-5u-etR"/>
+                            <constraint firstItem="evg-Nd-zcx" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="73" id="TEY-1l-9w3"/>
+                            <constraint firstItem="evg-Nd-zcx" firstAttribute="top" secondItem="eXE-oe-YxF" secondAttribute="bottom" constant="8" id="aB6-59-lW3"/>
+                            <constraint firstItem="eXE-oe-YxF" firstAttribute="centerX" secondItem="evg-Nd-zcx" secondAttribute="centerX" id="brs-Yn-YII"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="evg-Nd-zcx" secondAttribute="trailing" constant="73" id="cMq-qN-eFd"/>
+                            <constraint firstItem="eXE-oe-YxF" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="doF-3V-MUH"/>
+                            <constraint firstItem="eXE-oe-YxF" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="200" id="zew-Q6-ATA"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
