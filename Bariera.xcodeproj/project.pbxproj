@@ -210,6 +210,7 @@
 				TargetAttributes = {
 					E2AC74DA1D392D36007112C1 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = PWD7G2H3KX;
 					};
 					E2AC74F31D392D36007112C1 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -419,6 +420,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PWD7G2H3KX;
 				INFOPLIST_FILE = Bariera/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -431,6 +433,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PWD7G2H3KX;
 				INFOPLIST_FILE = Bariera/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
