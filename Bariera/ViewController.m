@@ -46,7 +46,7 @@ NSString* tel; //@"tel://0747977538"
     if( firstStart ){
         if( tel != nil && [tel length] > 0 ){
             [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel://%@",tel]]];
-            
+            exit(0);
         }
         
         else{
